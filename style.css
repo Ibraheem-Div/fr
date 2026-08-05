@@ -1,0 +1,213 @@
+/* الكود ده هيتطبق تلقائي لو الشاشة بقت قد الموبايل أو أقل */
+@media screen and (max-width: 768px) {
+    
+    /* مثال: نخلي العناصر اللي جنب بعض تقلب تحت بعض (تتحول لعمود) */
+    #conection {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* مثال: نصغر العرض بتاع الصناديق الكبيرة عشان ما تطلعش بره شاشة الموبايل */
+    .site-footer, .some-container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* ممكن تصغر الخط شوية عشان يناسب الشاشات الصغيرة */
+    body {
+        font-size: 14px;
+    }
+}
+
+body{
+    background-image: url('image/360_F_256565905_Zb4EQcx67OGS9j5mmhdnuRtu2PgT3Q8T.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+}
+header {
+    /* يجعل الهيدر عائماً وثابتاً أثناء التمرير */
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+
+    /* التصميم والشكل الجمالي */
+    background-color: rgb(84, 79, 71);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 20px;
+    
+    
+    /* زوايا دائرية من الأسفل والأعلى (شكل مستطيل بحواف دائرية) */
+    border-radius: 30px;
+    
+    
+}
+#logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-box input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+    text-align: right;
+}
+.nav-links {
+    
+    display: flex;
+    gap: 10px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px; /* لعمل الأزرار شكل دوائر أو كبسولات */
+    background-color: #a3b2f4;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background-color: #8b9de8;
+}
+#welcom{
+    text-align: center;
+    margin-top: 95px;
+}
+.about-us {
+    text-align: center;
+    color: #fff; /* نخلي لون الكلام أبيض ناصع عشان يبان بوضوح */
+    font-size: 20px; /* صغرناه سيكة عشان يبقى منسق جوه الصندوق */
+    
+    /* تصميم الصندوق العائم وراء الكلام */
+    background-color: rgba(0, 0, 0, 0.55); /* خلفية سوداء شفافة */
+    backdrop-filter: blur(6px); /* تأثير زجاجي ضبابي فخم */
+    width: 70%;
+    max-width: 700px;
+    margin: 40px auto; /* مسافة من اللي فوقه ومسنتر في النص */
+    padding: 30px;
+    border-radius: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* إطار خفيف جداً يبرز الشكل */
+}
+
+/* تنسيق العنوان جواها عشان يكون مميز */
+.about-us h2 {
+    color: #a3b2f4; /* نفس لون الأزرار بتاعتك عشان يبo فيه تناقس وتناسق بالالوان */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Lalezar", sans-serif; /* لو عايز تستخدم نفس خط الخدمات */
+}
+
+.servicis{
+    text-align: center;
+    font-size: larger;
+    padding: 35px;
+}
+
+#sr{
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.section{
+    text-align: right;
+    color: #fff; /* نخلي لون الكلام أبيض ناصع عشان يبان بوضوح */
+    font-size: 20px; /* صغرناه سيكة عشان يبقى منسق جوه الصندوق */
+    
+    /* تصميم الصندوق العائم وراء الكلام */
+    background-color: rgba(0, 0, 0, 0.55); /* خلفية سوداء شفافة */
+    backdrop-filter: blur(6px); /* تأثير زجاجي ضبابي فخم */
+    width: 70%;
+    max-width: 700px;
+    margin: 40px auto; /* مسافة من اللي فوقه ومسنتر في النص */
+    margin-left: 15px;
+    padding: 30px;
+    border-radius: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* إطار خفيف جداً يبرز الشكل */
+}
+.section2{
+    text-align: right;
+    color: #fff; /* نخلي لون الكلام أبيض ناصع عشان يبان بوضوح */
+    font-size: 20px; /* صغرناه سيكة عشان يبقى منسق جوه الصندوق */
+    
+    /* تصميم الصندوق العائم وراء الكلام */
+    background-color: rgba(0, 0, 0, 0.55); /* خلفية سوداء شفافة */
+    backdrop-filter: blur(6px); /* تأثير زجاجي ضبابي فخم */
+    width: 70%;
+    max-width: 700px;
+    margin: 40px auto; /* مسافة من اللي فوقه ومسنتر في النص */
+    margin-right: 15px;
+    padding: 30px;
+    border-radius: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* إطار خفيف جداً يبرز الشكل */
+}
+.image img{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+
+}
+footer {
+    background-color: #3b2f2f; /* لون خلفية الفوتر متناسق مع تصميمك */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#hema {
+    margin-bottom: 20px;
+}
+
+#conection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px; /* المسافة بين كل عنصر والتاني */
+}
+
+.st {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* المسافة بين الصورة والكلمة */
+}
+
+.im {
+    width: 24px;  /* تحجيم الصور عشان تبقى مناسبة جنب النص */
+    height: 24px;
+    object-fit: contain;
+}
+
+.st a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.st a:hover {
+    color: #d4a373; /* لون مميز عند الوقوف بالماوس */
+}
